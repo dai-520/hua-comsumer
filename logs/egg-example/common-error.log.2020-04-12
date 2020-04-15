@@ -1,0 +1,10 @@
+2020-04-13 09:05:12,312 ERROR 1832 nodejs.ClusterClientNoResponseError: client no response in 226830136ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\workspace\egg-consumer\node_modules\_cluster-client@3.0.1@cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 1832
+hostname: DESKTOP-39GQUQV
+

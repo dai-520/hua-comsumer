@@ -1,0 +1,15 @@
+2020-04-09 12:23:47,930 INFO 9540 [egg-schedule]: register schedule E:\workspace\egg-consumer\node_modules\_egg-multipart@2.10.1@egg-multipart\app\schedule\clean_tmpdir.js
+2020-04-09 12:23:47,930 INFO 9540 [egg-schedule]: register schedule E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-04-09 12:23:47,930 INFO 9540 [egg-schedule]: register schedule E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-04-09 12:23:48,874 INFO 1832 [Timer] E:\workspace\egg-consumer\node_modules\_egg-multipart@2.10.1@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 57971126ms at 2020-04-10 04:30:00.000
+2020-04-09 12:23:48,874 INFO 1832 [Timer] E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 41771126ms at 2020-04-10 00:00:00.000
+2020-04-09 12:23:48,875 INFO 1832 [Timer] E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 41772126ms at 2020-04-10 00:00:01.001
+2020-04-10 12:53:41,289 INFO 9540 [Job#1586494420621883179927168001] E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js executing by app
+2020-04-10 12:53:41,304 INFO 9540 [Job#158649442118788318141099991] E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2020-04-10 12:53:41,317 INFO 9540 [Job#158649442118888318148227991] E:\workspace\egg-consumer\node_modules\_egg-multipart@2.10.1@egg-multipart\app\schedule\clean_tmpdir.js executing by app
+2020-04-10 12:53:41,328 INFO 9540 [Job#1586494420621883179927168001] E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js execute succeed, used 34ms
+2020-04-10 12:53:41,333 INFO 9540 [Job#158649442118888318148227991] E:\workspace\egg-consumer\node_modules\_egg-multipart@2.10.1@egg-multipart\app\schedule\clean_tmpdir.js execute succeed, used 16ms
+2020-04-10 12:53:41,526 INFO 9540 [Job#158649442118788318141099991] E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 222ms
+2020-04-10 12:53:41,187 INFO 1832 [Timer] E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 39978814ms at 2020-04-11 00:00:00.001
+2020-04-10 12:53:41,188 INFO 1832 [Timer] E:\workspace\egg-consumer\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 39979813ms at 2020-04-11 00:00:01.001
+2020-04-10 12:53:41,194 INFO 1832 [Timer] E:\workspace\egg-consumer\node_modules\_egg-multipart@2.10.1@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 56178807ms at 2020-04-11 04:30:00.000

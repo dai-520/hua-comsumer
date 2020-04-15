@@ -1,0 +1,19 @@
+2020-04-07 09:18:49,498 INFO 5736 [egg-logrotator] app logger reload: got log-reload message
+2020-04-09 12:23:47,909 INFO 9540 [egg:logger] init all loggers with options: {"dir":"E:\\workspace\\egg-consumer\\logs\\egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-04-09 12:23:47,931 INFO 9540 [egg-multipart] stream mode enable
+2020-04-09 12:23:48,769 INFO 9540 [egg-static] starting static serve /public/ -> E:\workspace\egg-consumer\app\public
+2020-04-09 12:23:48,776 INFO 9540 [egg-security] use methodnoallow middleware
+2020-04-09 12:23:48,777 INFO 9540 [egg-security] use noopen middleware
+2020-04-09 12:23:48,777 INFO 9540 [egg-security] use nosniff middleware
+2020-04-09 12:23:48,778 INFO 9540 [egg-security] use xssProtection middleware
+2020-04-09 12:23:48,778 INFO 9540 [egg-security] use dta middleware
+2020-04-09 12:23:48,778 INFO 9540 [egg-security] compose 5 middlewares into one security middleware
+2020-04-09 12:23:48,794 INFO 9540 [egg:core] dump config after load, 9ms
+2020-04-09 12:23:48,832 INFO 9540 [egg-watcher:application] watcher start success
+2020-04-09 12:23:48,854 INFO 9540 [egg:core] dump config after ready, 3ms
+2020-04-10 12:53:41,174 WARN 9540 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-04-10 12:53:41,319 INFO 9540 [-/127.0.0.1/-/1ms SCHEDULE /__schedule?path=E:\workspace\egg-consumer\node_modules\_egg-multipart@2.10.1@egg-multipart\app\schedule\clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] start clean tmpdir: "C:\\Windows\\TEMP\\egg-multipart-tmp\\egg-example"
+2020-04-10 12:53:41,328 INFO 9540 [egg-logrotator] clean all log before 31 days
+2020-04-10 12:53:41,333 INFO 9540 [-/127.0.0.1/-/16ms SCHEDULE /__schedule?path=E:\workspace\egg-consumer\node_modules\_egg-multipart@2.10.1@egg-multipart\app\schedule\clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false] [egg-multipart:CleanTmpdir] end
+2020-04-10 12:53:41,526 INFO 9540 [egg-logrotator] broadcast log-reload
+2020-04-10 12:53:41,526 INFO 9540 [egg-logrotator] rotate files success by DayRotator, files ["E:\\workspace\\egg-consumer\\logs\\egg-example\\common-error.log -> E:\\workspace\\egg-consumer\\logs\\egg-example\\common-error.log.2020-04-09","E:\\workspace\\egg-consumer\\logs\\egg-example\\egg-example-web.log -> E:\\workspace\\egg-consumer\\logs\\egg-example\\egg-example-web.log.2020-04-09","E:\\workspace\\egg-consumer\\logs\\egg-example\\egg-web.log -> E:\\workspace\\egg-consumer\\logs\\egg-example\\egg-web.log.2020-04-09","E:\\workspace\\egg-consumer\\logs\\egg-example\\egg-schedule.log -> E:\\workspace\\egg-consumer\\logs\\egg-example\\egg-schedule.log.2020-04-09","E:\\workspace\\egg-consumer\\logs\\egg-example\\egg-agent.log -> E:\\workspace\\egg-consumer\\logs\\egg-example\\egg-agent.log.2020-04-09"]

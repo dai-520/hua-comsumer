@@ -1,0 +1,61 @@
+2020-04-07 09:18:49,481 INFO 11492 [egg-logrotator] agent logger reload: got log-reload message
+2020-04-07 09:18:54,406 INFO 11492 [egg-sequelize](8ms) Executed (default): INSERT INTO `wis_job` (`id`,`route_id`,`inspector_id`,`recipient_id`,`start_date`,`limit_hours`,`device_list`,`remarks`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2020-04-07 09:18:54,416 INFO 11492 [egg-sequelize](16ms) Executed (default): INSERT INTO `wis_job` (`id`,`route_id`,`inspector_id`,`recipient_id`,`start_date`,`limit_hours`,`device_list`,`remarks`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+2020-04-07 09:18:54,416 ERROR 11492 nodejs.SequelizeDatabaseError: Data truncated for column 'inspector_id' at row 1
+    at Query.formatError (E:\workspace\egg-consumer\node_modules\_sequelize@5.21.3@sequelize\lib\dialects\mysql\query.js:244:16)
+    at Execute.handler [as onResult] (E:\workspace\egg-consumer\node_modules\_sequelize@5.21.3@sequelize\lib\dialects\mysql\query.js:51:23)
+    at Execute.execute (E:\workspace\egg-consumer\node_modules\_mysql2@2.1.0@mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (E:\workspace\egg-consumer\node_modules\_mysql2@2.1.0@mysql2\lib\connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (E:\workspace\egg-consumer\node_modules\_mysql2@2.1.0@mysql2\lib\connection.js:75:12)
+    at PacketParser.executeStart (E:\workspace\egg-consumer\node_modules\_mysql2@2.1.0@mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (E:\workspace\egg-consumer\node_modules\_mysql2@2.1.0@mysql2\lib\connection.js:82:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+From previous event:
+    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (E:\workspace\egg-consumer\node_modules\_bluebird@3.7.2@bluebird\js\release\debuggability.js:482:19)
+    at Promise._then (E:\workspace\egg-consumer\node_modules\_bluebird@3.7.2@bluebird\js\release\promise.js:261:17)
+    at Promise.then (E:\workspace\egg-consumer\node_modules\_bluebird@3.7.2@bluebird\js\release\promise.js:154:17)
+    at model.save (E:\workspace\egg-consumer\node_modules\_sequelize@5.21.3@sequelize\lib\model.js:3962:8)
+    at Function.create (E:\workspace\egg-consumer\node_modules\_sequelize@5.21.3@sequelize\lib\model.js:2226:8)
+    at Queue.myqueue.process (E:/workspace/egg-consumer/app/util/utils.js:28:35)
+    at Promise (internal/util.js:274:30)
+    at new Promise (<anonymous>)
+    at bound  (internal/util.js:273:12)
+    at Queue.processJob (E:\workspace\egg-consumer\node_modules\_bull@3.12.1@bull\lib\queue.js:1050:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+name: "SequelizeDatabaseError"
+parent: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'inspector_id' at row 1","sql":"INSERT INTO `wis_job` (`id`,`route_id`,`inspector_id`,`recipient_id`,`start_date`,`limit_hours`,`device_list`,`remarks`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[4,"3;4",1,"2020-04-07 09:18:54",12,"4;5","test1"]}
+original: {"code":"WARN_DATA_TRUNCATED","errno":1265,"sqlState":"01000","sqlMessage":"Data truncated for column 'inspector_id' at row 1","sql":"INSERT INTO `wis_job` (`id`,`route_id`,`inspector_id`,`recipient_id`,`start_date`,`limit_hours`,`device_list`,`remarks`) VALUES (DEFAULT,?,?,?,?,?,?,?);","parameters":[4,"3;4",1,"2020-04-07 09:18:54",12,"4;5","test1"]}
+sql: "INSERT INTO `wis_job` (`id`,`route_id`,`inspector_id`,`recipient_id`,`start_date`,`limit_hours`,`device_list`,`remarks`) VALUES (DEFAULT,?,?,?,?,?,?,?);"
+parameters: [4,"3;4",1,"2020-04-07 09:18:54",12,"4;5","test1"]
+pid: 11492
+hostname: DESKTOP-39GQUQV
+
+2020-04-09 12:23:15,781 INFO 1832 [egg:logger] init all loggers with options: {"dir":"E:\\workspace\\egg-consumer\\logs\\egg-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-04-09 12:23:26,989 INFO 1832 [egg:core] dump config after load, 58ms
+2020-04-09 12:23:27,642 INFO 1832 [egg-watcher] Start watching: ["E:\\workspace\\egg-consumer\\app","E:\\workspace\\egg-consumer\\config","E:\\workspace\\egg-consumer\\mocks","E:\\workspace\\egg-consumer\\mocks_proxy","E:\\workspace\\egg-consumer\\app.js"]
+2020-04-09 12:23:27,643 INFO 1832 [egg-watcher] Start watching: "E:\\workspace\\egg-consumer\\app"
+2020-04-09 12:23:27,643 INFO 1832 [egg-watcher] Start watching: "E:\\workspace\\egg-consumer\\config"
+2020-04-09 12:23:27,643 INFO 1832 [egg-watcher] Start watching: "E:\\workspace\\egg-consumer\\mocks"
+2020-04-09 12:23:27,643 INFO 1832 [egg-watcher] Start watching: "E:\\workspace\\egg-consumer\\mocks_proxy"
+2020-04-09 12:23:27,643 INFO 1832 [egg-watcher] Start watching: "E:\\workspace\\egg-consumer\\app.js"
+2020-04-09 12:23:27,643 INFO 1832 [egg-watcher:agent] watcher start success
+2020-04-09 12:23:27,887 INFO 1832 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-04-09 12:23:27,899 INFO 1832 [egg-sequelize](5ms) Executed (default): SELECT `id`, `route_id` AS `routeId`, `inspector_ids` AS `inspectorIds`, `start_date` AS `startDate`, `limit_hours` AS `limitHours`, `device_list` AS `deviceList`, `remarks`, `cron` FROM `wis_regular` AS `wis_regular`;
+2020-04-09 12:23:27,856 INFO 1832 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"E:\\workspace\\egg-consumer\\app\\public","stat":{"dev":913642184,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":281474976863125,"size":0,"atimeMs":1586406207836.1787,"mtimeMs":1567591110856.3882,"ctimeMs":1574301994266.9927,"birthtimeMs":1562840762146.9578,"atime":"2020-04-09T04:23:27.836Z","mtime":"2019-09-04T09:58:30.856Z","ctime":"2019-11-21T02:06:34.267Z","birthtime":"2019-07-11T10:26:02.147Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-04-09 12:23:27,858 INFO 1832 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"E:\\workspace\\egg-consumer\\app\\util","stat":{"dev":913642184,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":281474976863126,"size":0,"atimeMs":1586406207836.1787,"mtimeMs":1577166214171.9575,"ctimeMs":1577166214171.9575,"birthtimeMs":1562840762149.8867,"atime":"2020-04-09T04:23:27.836Z","mtime":"2019-12-24T05:43:34.172Z","ctime":"2019-12-24T05:43:34.172Z","birthtime":"2019-07-11T10:26:02.150Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-04-09 12:23:27,859 INFO 1832 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"E:\\workspace\\egg-consumer\\app\\controller","stat":{"dev":913642184,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":562949953743472,"size":0,"atimeMs":1586406207851.8003,"mtimeMs":1577415456790.101,"ctimeMs":1577415456790.101,"birthtimeMs":1577412673412.1296,"atime":"2020-04-09T04:23:27.852Z","mtime":"2019-12-27T02:57:36.790Z","ctime":"2019-12-27T02:57:36.790Z","birthtime":"2019-12-27T02:11:13.412Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-04-09 12:23:27,892 INFO 1832 [egg:core] dump config after ready, 3ms
+2020-04-10 12:53:41,308 ERROR 1832 nodejs.ClusterClientNoResponseError: client no response in 64651145ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\workspace\egg-consumer\node_modules\_cluster-client@3.0.1@cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 1832
+hostname: DESKTOP-39GQUQV
+

@@ -1,0 +1,15 @@
+2020-04-14 08:56:36,297 INFO 1832 [egg-logrotator] agent logger reload: got log-reload message
+2020-04-14 15:09:46,270 INFO 1832 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"E:\\workspace\\egg-consumer\\app\\controller","stat":{"dev":913642184,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":562949953743472,"size":0,"atimeMs":1586848186269.465,"mtimeMs":1577415456790.101,"ctimeMs":1577415456790.101,"birthtimeMs":1577412673412.1296,"atime":"2020-04-14T07:09:46.269Z","mtime":"2019-12-27T02:57:36.790Z","ctime":"2019-12-27T02:57:36.790Z","birthtime":"2019-12-27T02:11:13.412Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-04-14 15:09:46,271 INFO 1832 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"E:\\workspace\\egg-consumer\\app\\model","stat":{"dev":913642184,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":562949953743476,"size":0,"atimeMs":1586848186269.465,"mtimeMs":1577415481351.3643,"ctimeMs":1577415481351.3643,"birthtimeMs":1577412720918.3843,"atime":"2020-04-14T07:09:46.269Z","mtime":"2019-12-27T02:58:01.351Z","ctime":"2019-12-27T02:58:01.351Z","birthtime":"2019-12-27T02:12:00.918Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-04-14 15:09:46,271 INFO 1832 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"E:\\workspace\\egg-consumer\\app\\public","stat":{"dev":913642184,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":281474976863125,"size":0,"atimeMs":1586848186269.465,"mtimeMs":1567591110856.3882,"ctimeMs":1574301994266.9927,"birthtimeMs":1562840762146.9578,"atime":"2020-04-14T07:09:46.269Z","mtime":"2019-09-04T09:58:30.856Z","ctime":"2019-11-21T02:06:34.267Z","birthtime":"2019-07-11T10:26:02.147Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-04-14 15:09:46,272 INFO 1832 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"E:\\workspace\\egg-consumer\\app\\util","stat":{"dev":913642184,"mode":16822,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":281474976863126,"size":0,"atimeMs":1586848186270.4626,"mtimeMs":1577166214171.9575,"ctimeMs":1577166214171.9575,"birthtimeMs":1562840762149.8867,"atime":"2020-04-14T07:09:46.270Z","mtime":"2019-12-24T05:43:34.172Z","ctime":"2019-12-24T05:43:34.172Z","birthtime":"2019-07-11T10:26:02.150Z"},"remove":false,"isDirectory":true,"isFile":false}
+2020-04-15 08:58:39,503 ERROR 1832 nodejs.ClusterClientNoResponseError: client no response in 53261782ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\workspace\egg-consumer\node_modules\_cluster-client@3.0.1@cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 1832
+hostname: DESKTOP-39GQUQV
+
